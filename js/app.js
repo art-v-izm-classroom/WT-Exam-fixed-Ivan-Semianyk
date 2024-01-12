@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
         resultOutput.innerHTML = "log(" + op1 + ") = " + Math.log(op1) + "<br>";
         resultOutput.innerHTML += "<strong>" + response.name + "</strong><br>";
         resultOutput.innerHTML += response.description + "<br>";
-        resultOutput.innerHTML += "<img src='/images/" + response.image_name + "' alt='Logarithm'>";
+        resultOutput.innerHTML += "<img src='images/" + response.image_name + "' alt='Logarithm'>";
       });
     }
    
@@ -90,7 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
         resultOutput.innerHTML = operation + "(" + op1 + "°) = " + Math[operation](radians) + "<br>";
         resultOutput.innerHTML += "<strong>" + response.name + "</strong><br>";
         resultOutput.innerHTML += response.description + "<br>";
-        resultOutput.innerHTML += "<img src='/images/" + response.image_name + "' alt='" + response.name + "'>";
+        resultOutput.innerHTML += "<img src='images/" + response.image_name + "' alt='" + response.name + "'>";
       });
     }
   });

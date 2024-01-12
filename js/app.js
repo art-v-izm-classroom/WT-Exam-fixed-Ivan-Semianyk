@@ -68,7 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
       
-      $ajaxUtils.sendGetRequest("/data/log.json", function (response) {
+      $ajaxUtils.sendGetRequest("data/log.json", function (response) {
         resultOutput.innerHTML = "log(" + op1 + ") = " + Math.log(op1) + "<br>";
         resultOutput.innerHTML += "<strong>" + response.name + "</strong><br>";
         resultOutput.innerHTML += response.description + "<br>";
@@ -86,7 +86,7 @@ document.addEventListener("DOMContentLoaded", () => {
       
       const radians = op1 * (Math.PI / 180);
    
-      $ajaxUtils.sendGetRequest("/data/" + operation + ".json", function (response) {
+      $ajaxUtils.sendGetRequest("data/" + operation + ".json", function (response) {
         resultOutput.innerHTML = operation + "(" + op1 + "°) = " + Math[operation](radians) + "<br>";
         resultOutput.innerHTML += "<strong>" + response.name + "</strong><br>";
         resultOutput.innerHTML += response.description + "<br>";
